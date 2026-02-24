@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background: #050910;
+  color: #f5f9ff;
+}
+
+.site-header {
+  padding: 2rem 1.5rem 1rem;
+  background: radial-gradient(circle at top, #18283e 0, #050910 60%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.site-header h1 {
+  margin: 0 0 0.5rem;
+}
+
+.site-header p {
+  margin: 0;
+  color: #c2d7ff;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 5rem; /* extra bottom padding above bar */
+}
+
+.content h2 {
+  margin-top: 0;
+}
+
+/* Particle bar at the bottom */
+#footer-particle-bar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 70px; /* splash zone height */
+  pointer-events: none;
+  z-index: 999;
+}
