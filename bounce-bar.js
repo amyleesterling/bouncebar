@@ -133,8 +133,8 @@
           vy: 0,
           restX: restX,
           restY: finalRestY,
-          radius: 1.2,
-          size: 0.7 + Math.random() * 0.6,
+          radius: 1.6,
+          size: 0.85 + Math.random() * 0.5,
           color: randomColor(),
           settled: false,
           motion: null
