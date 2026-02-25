@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Source+Sans+3:wght@400;600&display=swap');
+
 *,
 *::before,
 *::after {
@@ -6,25 +8,29 @@
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  line-height: 1.6;
-  background: #050910;
-  color: #f5f9ff;
+  font-family: "Source Serif 4", "Iowan Old Style", "Times New Roman", serif;
+  line-height: 1.7;
+  background: radial-gradient(circle at 20% 0%, #ffffff 0%, #f4f1e9 45%, #ece6d8 100%);
+  color: #1b1b1b;
 }
 
 .site-header {
-  padding: 2rem 1.5rem 1rem;
-  background: radial-gradient(circle at top, #18283e 0, #050910 60%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 2.5rem 1.5rem 1.5rem;
+  background: linear-gradient(180deg, #ffffff 0%, #f6f2e8 100%);
+  border-bottom: 1px solid rgba(30, 30, 30, 0.1);
+  box-shadow: 0 6px 24px rgba(20, 20, 20, 0.06);
 }
 
 .site-header h1 {
   margin: 0 0 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
 }
 
 .site-header p {
   margin: 0;
-  color: #c2d7ff;
+  color: #4a5568;
+  font-family: "Source Sans 3", system-ui, sans-serif;
 }
 
 .content {
@@ -35,6 +41,19 @@ body {
 
 .content h2 {
   margin-top: 0;
+  font-weight: 600;
+}
+
+main p {
+  color: #2d2d2d;
+}
+
+a {
+  color: #1e4e8a;
+}
+
+a:hover {
+  color: #163b67;
 }
 
 /* Particle bar at the bottom */
@@ -43,7 +62,7 @@ body {
   left: 0;
   bottom: 0;
   width: 100vw;
-  height: 70px; /* splash zone height */
+  height: 360px; /* splash zone height */
   pointer-events: none;
   z-index: 999;
 }
